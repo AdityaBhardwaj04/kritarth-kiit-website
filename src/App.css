@@ -1,0 +1,150 @@
+*{
+  -ms-overflow-style-x: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes from-left {
+  from { 
+    opacity: 0;
+    transform: translateX(-2px);
+  }
+  to { 
+    opacity: 1; 
+    transform: translateX(0px);
+  }
+}
+ 
+.animate-fade-in {
+  animation-name: from-left;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes from-right {
+  from { 
+    opacity: 0;
+    transform: translateX(2px);
+    }
+  to { 
+    opacity: 1; 
+    transform: translateX(0px);
+  }
+}
+
+.animate-from-bottom {
+  animation-name: from-right;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in-out;
+}
+
+.font_header{
+  font-family: Mulish;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0.005em;
+  text-align: justified;
+
+}
+
+.font_body{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  text-align: justified;
+
+}
+
+.nav_font{
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+@media only screen and (max-width:1100px) {
+
+  .nav_font{
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+.img{
+  height: 50px;
+}
+}
+@media only screen and (max-width:768px) {
+
+  .nav_font{
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+.img{
+  height: 30px;
+}
+}
+
+.logo_shadow{
+  
+  filter:drop-shadow(10px 15px 10px 0px rgba(0, 0, 0, 0.51));
+
+}
+
+.back{
+  background: linear-gradient(243.88deg, #4D38CF 48.33%, #0F93A5 92.19%);
+
+}
+
+@keyframes flip {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(-90deg);
+  }
+}
+
+.animate-flip {
+  animation: flip 1s infinite;
+}
+
+
+.zoom-in-out-box {
+  animation: zoom-in-zoom-out 4s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+
+.blurbox{
+border-radius: 23.93px;
+border: 0.92px solid #7F7F7F;
+background: linear-gradient(134deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
+box-shadow: 0px 3.681516647338867px 3.681516647338867px 0px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(9.203792572021484px);
+}
